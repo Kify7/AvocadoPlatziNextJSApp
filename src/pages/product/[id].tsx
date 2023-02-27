@@ -30,16 +30,17 @@ const ProductItem = () => {
             <div className="font-tilt text-gray">{product?.sku}</div>
           </div>
         </div>
-        <div className='px-6 py-4'>
-        <div className="font-karla-bold text-terracotta text-xl">
-          Acerca de este Aguacate
+        <div className="px-6 py-4">
+          <div className="font-karla-bold text-terracotta text-xl">
+            Acerca de este Aguacate
+          </div>
+          <div className="font-tilt text-base text-gray">
+            {product?.attributes.description}
+          </div>
+          <div className="border-b border-smoke-400 h-2 w-full "></div>
+          <div>Aqui la tabla</div>
         </div>
-        <div className="font-tilt text-base text-gray">{product?.attributes.description}</div>
-        <div className='border-b border-smoke-400 h-2 w-full '></div>
-        <div>Aqui la tabla</div>
       </div>
-      </div>
-     
     </section>
   );
 };

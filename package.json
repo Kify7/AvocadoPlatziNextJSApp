@@ -9,8 +9,13 @@
     "start": "next start",
     "lint": "eslint \"./packages/**/src/**/*.tsx\"",
     "lint-fix": "eslint \"./packages/**/src/**/*.tsx\" --fix",
-    "prettier-check": "prettier --check \"packages/**/src/**/*.{js,jsx,ts,tsx,json}\"",
-    "prettier-fix": "prettier --write \"packages/**/src/**/*.{js,jsx,ts,tsx,json}\""
+    "prettier-check": "prettier --check \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "prettier-fix": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "check-format": "prettier --check .",
+    "check-types": "ts --pretty --noEmit .",
+    "check-lint": "eslint .  --ext ts --ext js",
+    "prettier": "prettier --write .",
+    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
   },
   "keywords": [],
   "author": "",
