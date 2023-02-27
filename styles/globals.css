@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Karla-Regular';
+  src: local('Karla-Regular'), url(./fonts/Karla-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Karla-Bold';
+  src: local('Karla-Bold'), url(./fonts/Karla-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'TiltNeon-Regular';
+  src: local('TiltNeon-Regular'),
+    url(./fonts/TiltNeon-Regular.ttf) format('truetype');
+}
+body {
+  font-family: 'Karla-Regular';
+  margin: 0;
+}
+
+h1 {
+  font-family: 'TiltNeon-Regular';
+}
+
+p {
+  font-family: 'Karla-Regular';
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100%;
+}
