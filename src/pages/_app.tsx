@@ -1,7 +1,8 @@
 import { AppProps } from 'next/app';
-import Layout from 'src/components/Layout/Layout';
 import '../../styles/globals.css';
 import 'tailwindcss/tailwind.css';
+
+import CartProvider from '@store/Cart';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   /* Providers -- Context/ Providers/ Themes data */
@@ -9,8 +10,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   /* props adicionales*/
   /* props adicionales*/
   return (
-    <Layout>
+    <CartProvider>
       <Component {...pageProps} />
-    </Layout>
+    </CartProvider>
   );
 }

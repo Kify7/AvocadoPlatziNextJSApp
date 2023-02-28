@@ -14,7 +14,9 @@ module.exports = {
       tree: '#386641',
       gray: '#606569',
       'smoke-300': '#F5F3F2',
-      'smoke-400': '#EBE8E7'
+      'smoke-400': '#EBE8E7',
+      'tiger-500': '#FF674C',
+      'tiger-100': '#FFE7D5',
     },
     fontFamily: {
       karla: ['Karla-Regular', 'Karla-Bold'],

@@ -4,7 +4,10 @@
     "paths": {
       "@database": ["database/db.ts"],
       "@components/*": ["src/components/*"],
-      "@svg/*": ["src/svg/*"]
+      "@types/*": ["src/AvocadoTypes/*"],
+      "@svg/*": ["src/svg/*"],
+      "@store/*":["src/store/*"],
+      "@utils/*":["src/utils/*"]
     },
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],

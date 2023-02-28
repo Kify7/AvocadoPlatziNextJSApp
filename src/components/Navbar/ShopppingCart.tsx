@@ -27,14 +27,23 @@ const ShopppingCart = ({ cartCount, name }: ShoppingCartIconProps) => {
         </span>
       );
     }
-    return `(${cartCount})`;
+    return (
+      <div>
+        {' '}
+        {` ${name} `}
+        {`(${cartCount})`}
+      </div>
+    );
   };
 
   return (
-    <div className='flex hover:text-green"'>
-      <button type="button">{shopCart}</button>
+    <Link href="/cart" className="flex hover:text-green">
+      <div className="cursor-pointer">{shopCart}</div>
       <div className="text-base text-cream px-2">{showCartCount()}</div>
-    </div>
+      <div className="text-base text-cream px-2 self-center hover:text-green">
+        Ir a la canasta
+      </div>
+    </Link>
   );
 };
 

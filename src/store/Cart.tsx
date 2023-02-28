@@ -1,5 +1,5 @@
 import React, { Dispatch, useContext, useReducer } from 'react';
-import { CartAction, CartItemType, CartState } from 'src/types/types';
+import { CartAction, CartItemType, CartState } from 'src/AvocadoTypes/types';
 
 const defaultState = {} as CartState;
 

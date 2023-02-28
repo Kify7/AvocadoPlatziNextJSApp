@@ -1,6 +1,6 @@
-import Item from '@components/Item/Item';
 import ItemsList from '@components/ItemsList/ItemsList';
 import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader';
+import Layout from '@components/Layout/Layout';
 import React, { useEffect, useState } from 'react';
 
 const Home = () => {
@@ -15,10 +15,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      <KawaiiHeader />
-      <ItemsList productList={productList} />
-    </div>
+    <Layout>
+      <div>
+        <KawaiiHeader />
+        <ItemsList productList={productList} />
+      </div>
+    </Layout>
   );
 };
 

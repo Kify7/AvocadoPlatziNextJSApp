@@ -1,3 +1,4 @@
+import { PosMeMuero } from '@components/SVGIcons';
 import React from 'react';
 
 const MurderModal = ({
@@ -24,19 +25,22 @@ const MurderModal = ({
                 Por otro lado, eres una persona muy curiosa y has descubierto
                 esto.
               </p>
-
-              <button
-                className="bg-terracotta px-4 py-2 rounded-md text-md text-white font-tilt mt-8"
-                onClick={onClick}
-              >
-                Ay, lo siento
-              </button>
-              <button
-                className="border-2 border-green px-7 py-2 ml-2 rounded-md text-md text-white font-tilt mt-8"
-                onClick={onClick}
-              >
-                Ok
-              </button>
+              <div className="w-full flex justify-center mt-2">
+                {' '}
+                <button
+                  className="bg-terracotta px-4 py-2 rounded-md text-md text-white font-tilt mt-8"
+                  onClick={onClick}
+                >
+                  Ay, lo siento
+                </button>
+                <PosMeMuero />
+                <button
+                  className="border-2 border-green px-7 py-2 ml-2 rounded-md text-md text-white font-tilt mt-8"
+                  onClick={onClick}
+                >
+                  Ok
+                </button>
+              </div>
             </div>
           </div>
         </div>
